@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "unpack-file": "node ./utils/unpackFile.js",
+    "generate-with-nodejs-pptx": "node ./nodejs-pptx/index.js",
+    "generate-with-pptxgenjs": "node ./pptxgenjs/index.js",
+    "generate-from-scratch": "node ./generator-from-scratch/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/sergiy-mykhailov/pptx-generator-test/issues"
   },
-  "homepage": "https://github.com/sergiy-mykhailov/pptx-generator-test#readme"
+  "homepage": "https://github.com/sergiy-mykhailov/pptx-generator-test#readme",
+  "dependencies": {
+    "dayjs": "^1.11.9",
+    "jszip": "^3.10.1",
+    "nodejs-pptx": "^1.2.4",
+    "pptxgenjs": "^3.12.0",
+    "xmlbuilder2": "^3.1.1"
+  }
 }
